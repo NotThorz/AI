@@ -1,0 +1,165 @@
+{% extends 'layout/landing.html' %}
+{% load static %}
+{% block body %}
+<div class="container">
+        <div class="page-banner">
+          <div class="row justify-content-center align-items-center h-100">
+            <div class="col-md-6">
+              <nav aria-label="Breadcrumb">
+                <ul
+                  class="breadcrumb justify-content-center py-0 bg-transparent"
+                >
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active">Our Services</li>
+                </ul>
+              </nav>
+              <h1 class="text-center">Services</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+<div class="page-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card-service wow fadeInUp">
+              <div class="header">
+                <img
+                  src="{% static 'landing/img/services/service-1.svg' %}"
+                  alt=""
+                />
+              </div>
+              <div class="body">
+                <h5 class="text-secondary">Repurpose old content</h5>
+                <p>
+                  Effortlessly transform your old content into new, engaging pieces . Win the content race in seconds and focus on creating fresh content for your business.
+                </p>
+                <a href="service.html" class="btn btn-primary">Try it</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card-service wow fadeInUp">
+              <div class="header">
+                <img
+                  src="{% static 'landing/img/services/service-2.svg' %}"
+                  alt=""
+                />
+              </div>
+              <div class="body">
+                <h5 class="text-secondary">Improve Google rankings</h5>
+                <p>
+                  Write SEO blogs and meta descriptions that are keyword-rich, and make you land top-of-the-page on Google search.
+                </p>
+                <a href="service.html" class="btn btn-primary">Try it</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card-service wow fadeInUp">
+              <div class="header">
+                <img
+                  src="{% static 'landing/img/services/service-3.svg' %}"
+                  alt=""
+                />
+              </div>
+              <div class="body">
+                <h5 class="text-secondary">Long-form content 10X faster</h5>
+                <p>
+                  Save hours by automating the most tedious task of creating high volume of content for blogs, whitepapers, and more.
+                </p>
+                <a href="service.html" class="btn btn-primary">Try it</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- .container -->
+    </div>
+    <!-- .page-section -->
+
+    <div class="page-section" id="about">
+      <div class="container">
+        <div class="text-center wow fadeInUp">
+          <div class="subhead">Pricing Plan</div>
+          <h2 class="title-section">Choose plan the right for you</h2>
+          <div class="divider mx-auto"></div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-4 py-3 wow zoomIn">
+            <div class="card-pricing">
+              <div class="header">
+                <div class="pricing-type">Free</div>
+                <div class="price">
+                  <span class="dollar">$</span>
+                  <h1>0<span class="suffix">.00</span></h1>
+                </div>
+                <h5>Per Month</h5>
+              </div>
+              <div class="body">
+                <p>500 <span class="suffix">Words</span></p>
+                <p>3 Change <span class="suffix">Keywords</span></p>
+                <p>Social Media <span class="suffix">Reviews</span></p>
+                <p>1 Free <span class="suffix">Optimization</span></p>
+                <p>24/7 <span class="suffix">Support</span></p>
+              </div>
+              <div class="footer">
+                <a href="#" class="btn btn-pricing btn-block">Subscribe</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 py-3 wow zoomIn">
+            <div class="card-pricing marked">
+              <div class="header">
+                <div class="pricing-type">Standar</div>
+                <div class="price">
+                  <span class="dollar">$</span>
+                  <h1>19<span class="suffix">.99</span></h1>
+                </div>
+                <h5>Per Month</h5>
+              </div>
+              <div class="body">
+                <p>10000 <span class="suffix">words</span></p>
+                <p>1,300 Change <span class="suffix">Keywords</span></p>
+                <p>Social Media <span class="suffix">Reviews</span></p>
+                <p> Free <span class="suffix">Optimization</span></p>
+                <p>24/7 <span class="suffix">Support</span></p>
+              </div>
+              <div class="footer">
+                <a href="#" class="btn btn-pricing btn-block">Subscribe</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 py-3 wow zoomIn">
+            <div class="card-pricing">
+              <div class="header">
+                <div class="pricing-type">Professional</div>
+                <div class="price">
+                  <span class="dollar">$</span>
+                  <h1>49<span class="suffix">.99</span></h1>
+                </div>
+                <h5>Per Month</h5>
+              </div>
+              <div class="body">
+                <p>25 Analytics <span class="suffix">Campaign</span></p>
+                <p>Unlimited Change <span class="suffix">Keywords</span></p>
+                <p>Social Media <span class="suffix">Reviews</span></p>
+                <p>1 Free <span class="suffix">Optimization</span></p>
+                <p>24/7 <span class="suffix">Support</span></p>
+              </div>
+              <div class="footer">
+                <a href="#" class="btn btn-pricing btn-block">Subscribe</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- .container -->
+    </div>
+    <!-- .page-section -->
+
+    {% endblock %}
