@@ -1,0 +1,95 @@
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   
+    <title>AI-Buddy</title> 
+    <link rel="stylesheet" href="{% static 'func/style.css' %}">
+    <link rel="stylesheet" href="{% static 'landing/css/maicons.css' %}" />
+    <link rel="stylesheet" href="{% static 'landing/css/bootstrap.css' %}" />
+    <link rel="stylesheet" href="{% static 'landing/css/animate.css' %}" />
+    <link rel="stylesheet" href="{% static 'landing/css/theme.css' %}" />
+  </head>
+  <body>
+    <!-- Back to top button -->
+    <div class="back-to-top"></div>
+
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white sticky"
+        data-offset="500"
+      >
+        <div class="container">
+          <a href="{% url 'home' %}" class="navbar-brand"
+            >AI<span class="text-primary">-Buddy</span></a
+          >
+
+          <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="navbar-collapse collapse" id="navbarContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href=" {% url 'home' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'about' %}">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'services' %}">Services</a>
+              </li>
+              {% if request.user.is_authenticated %}
+              <li class="nav-item">
+                <a class="btn btn-primary ml-lg-2" href="{% url 'logout' %}">logout</a>
+              </li>
+              {% else %}
+              <li class="nav-item">
+                <a class="btn btn-primary ml-lg-2" href="{% url 'login' %}">Login</a>
+              </li>
+              {% endif %}
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<body>
+    </div>
+    <div class="main">
+        <div class="content">
+            <h1 id="heading">AI-Buddy</h1>
+            <h4 id='heading3'>Content recycle</h4>
+            <p id='heading2'>Write the content you wish to recycle</p>
+        </div>
+        <div class="command">
+            <input type="text" id="cmd" placeholder="Paste the content you wish to recycle">
+            <button id="search" href="{% url 'home' %}">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20"
+                    class="w-4 h-4 rotate-90" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z">
+                    </path>
+                </svg>
+            </button>
+
+        </div>
+        
+    </div>
+</body>
+
+</html>
+
