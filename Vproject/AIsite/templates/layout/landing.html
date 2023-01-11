@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
 
     <title>AI-Buddy</title>
     <link rel="stylesheet" href="{% static 'landing/css/maicons.css' %}" />
@@ -51,10 +52,7 @@
               </li>
               {% if request.user.is_authenticated %}
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'logout' %}">logout</a>
-              </li>
-              <li class="nav-item">
-                <a class="btn btn-primary ml-lg-2" href="{% url 'home' %}">Dashboard</a>
+                <a class="btn btn-primary ml-lg-2" href="{% url 'logout' %}">logout</a>
               </li>
               {% else %}
               <li class="nav-item">

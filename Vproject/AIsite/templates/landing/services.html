@@ -9,7 +9,7 @@
                 <ul
                   class="breadcrumb justify-content-center py-0 bg-transparent"
                 >
-                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
                   <li class="breadcrumb-item active">Our Services</li>
                 </ul>
               </nav>
@@ -32,11 +32,11 @@
                 />
               </div>
               <div class="body">
-                <h5 class="text-secondary">Repurpose old content</h5>
+                <h5 class="text-secondary">Improve Google rankings</h5>
                 <p>
-                  Effortlessly transform your old content into new, engaging pieces . Win the content race in seconds and focus on creating fresh content for your business.
+                  Write SEO blogs and meta descriptions that are keyword-rich, and make you land top-of-the-page on Google search.
                 </p>
-                <a href="service.html" class="btn btn-primary">Try it</a>
+                <a href="{% url 'blog' %}" class="btn btn-primary">Try it</a>
               </div>
             </div>
           </div>
@@ -49,11 +49,11 @@
                 />
               </div>
               <div class="body">
-                <h5 class="text-secondary">Improve Google rankings</h5>
+                <h5 class="text-secondary">Repurpose old content</h5>
                 <p>
-                  Write SEO blogs and meta descriptions that are keyword-rich, and make you land top-of-the-page on Google search.
+                  Effortlessly transform your old content into new, engaging pieces . Win the content race in seconds and focus on creating fresh content for your business.
                 </p>
-                <a href="service.html" class="btn btn-primary">Try it</a>
+                <a href="{% url 'content' %}" class="btn btn-primary">Try it</a>
               </div>
             </div>
           </div>
@@ -66,11 +66,11 @@
                 />
               </div>
               <div class="body">
-                <h5 class="text-secondary">Long-form content 10X faster</h5>
+                <h5 class="text-secondary">Emails</h5>
                 <p>
-                  Save hours by automating the most tedious task of creating high volume of content for blogs, whitepapers, and more.
+                  No more spending hours writing & revising your emails. Here’s a quick way to produce email campaigns that convert in less than 10 seconds.
                 </p>
-                <a href="service.html" class="btn btn-primary">Try it</a>
+                <a href="{% url 'emails' %}" class="btn btn-primary">Try it</a>
               </div>
             </div>
           </div>
@@ -80,7 +80,7 @@
     </div>
     <!-- .page-section -->
 
-    <div class="page-section" id="about">
+    <div class="page-section bg-light" id="about">
       <div class="container">
         <div class="text-center wow fadeInUp">
           <div class="subhead">Pricing Plan</div>

@@ -18,7 +18,7 @@ def user_login(request):
         if user is not None:
             login(request, user)
             # Redirect to a success page
-            return redirect('home')
+            return redirect('services')
 
         # If the credentials are invalid, show an error message
         else:
@@ -41,5 +41,12 @@ def register(request):
             email=email, username=email, password=password)
         newUser.save()
         auth.login(request, newUser)
-        return redirect('home')
+        return redirect('services')
     return render(request, 'authorisation/register.html', {})
+
+
+
+
+
+def home(request):
+    return render(request, 'landing/index.html', {})
