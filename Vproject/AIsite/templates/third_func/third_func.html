@@ -76,15 +76,21 @@
             <p id='heading2'>Write the mail you want to respond to</p>
         </div>
         <div class="command">
-            <input type="text" id="cmd" placeholder="Paste the mail and we will respond to it">
-            <button id="search" href="{% url 'home' %}">
-                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20"
+            
+          <form id="" action="{% url 'home' %}" method="post">
+    {% csrf_token %}
+    <textarea id="cmd" name="user-input" style="resize: none;overflow: hidden" placeholder="Enter the mail and press enter"></textarea>
+
+
+    <button id="search" type="submit"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20"
                     class="w-4 h-4 rotate-90" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z">
                     </path>
                 </svg>
-            </button>
+    </button>
+</form>
+
 
         </div>
         
